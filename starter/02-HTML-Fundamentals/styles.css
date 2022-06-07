@@ -22,6 +22,20 @@ body {
   background-color: #f7f7f7;
   text-align: center;
   padding: 20px;
+  position: relative;
+}
+
+.product-title::before {
+  content: "SALE";
+  background-color: rgb(218, 0, 0);
+  color: #f7f7f7;
+  font-size: 15px;
+  padding: 5px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  letter-spacing: 3px;
 }
 
 .image {
@@ -51,6 +65,40 @@ body {
   text-decoration: none;
 }
 
+.color-blocks {
+  margin-top: 20px;
+}
+
+.color-blocks div {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.black-block {
+  background-color: black;
+}
+
+.blue-block {
+  background-color: blue;
+}
+
+.red-block {
+  background-color: red;
+}
+
+.yellow-block {
+  background-color: rgb(235, 235, 0);
+}
+
+.green-block {
+  background-color: green;
+}
+
+.brown-block {
+  background-color: brown;
+}
+
 .details-title {
   margin-top: 20px;
   margin-bottom: 15px;
@@ -71,6 +119,7 @@ body {
 .add-cart {
   background-color: black;
   color: white;
+  border: none;
   border-top: 5px solid black;
   font-size: large;
   cursor: pointer;
