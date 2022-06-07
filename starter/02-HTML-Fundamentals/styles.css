@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1.4;
@@ -9,11 +14,18 @@ body {
 
 .product {
   border: 5px solid black;
+  width: 825px;
+  margin: 40px auto;
 }
 
 .product-title {
   background-color: #f7f7f7;
   text-align: center;
+  padding: 20px;
+}
+
+.image {
+  margin-bottom: 10px;
 }
 
 .price {
@@ -24,6 +36,7 @@ body {
   font-size: 15px;
   font-weight: bold;
   color: #696969;
+  margin-bottom: 15px;
 }
 
 /* MORE INFO */
@@ -38,9 +51,19 @@ body {
   text-decoration: none;
 }
 
+.details-title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
 /* PRODUCT DETAILS */
 .details-list {
   list-style: square;
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
 }
 
 /* BUTTON */
@@ -48,9 +71,11 @@ body {
 .add-cart {
   background-color: black;
   color: white;
-  border: none;
+  border-top: 5px solid black;
   font-size: large;
   cursor: pointer;
+  width: 100%;
+  height: 50px;
 }
 
 .add-cart:hover {
