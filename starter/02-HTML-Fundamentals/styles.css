@@ -17,10 +17,11 @@ body {
 
 .container {
   /* background-color: red; */
+  display: flex;
+  gap: 40px;
 }
 
 .image-container {
-  float: left;
   margin-right: 40px;
 }
 
@@ -60,28 +61,29 @@ body {
 
 /* PRODUCT INFO */
 .info-container {
-  width: 243px;
-  float: left;
   margin-right: 40px;
   margin-top: 20px;
+  flex: 1;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .price {
   font-size: 25px;
-  float: left;
 }
 
 .shipping {
-  font-size: 15px;
+  font-size: 10px;
   font-weight: bold;
   color: #696969;
-  margin-bottom: 15px;
-  float: right;
-  margin-top: 8px;
 }
 
 .product-description {
-  clear: both;
   margin-bottom: 10px;
 }
 /* MORE INFO */
@@ -98,12 +100,12 @@ body {
 
 .color-blocks {
   margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 .color-blocks div {
-  display: inline-block;
   padding: 10px;
-  margin-right: 10px;
 }
 
 .black-block {
@@ -133,9 +135,8 @@ body {
 /* PRODUCT DETAILS */
 
 .details-container {
-  width: 240px;
-  float: left;
   margin-top: 20px;
+  flex: 1;
 }
 
 .details-title {
