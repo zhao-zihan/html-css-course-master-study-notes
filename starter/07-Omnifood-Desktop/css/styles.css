@@ -18,7 +18,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -49,11 +49,43 @@
   background-color: #cf711f;
 }
 
+/* MOBILE */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* HERO SECTION */
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
+/* @media (max-width: 1200px) {
+  .section-hero {
+    background-color: orangered;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-hero {
+    border: 20px dashed blue;
+    background-color: #51cf66;
+  }
+} */
 
 .hero {
   max-width: 130rem;
@@ -205,116 +237,7 @@
 
 .meal:hover {
   transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06// delete the following line if no text is used
-  // edit the line if you wanna use other fonts
-  @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
-  
-  // use only the available space inside the 400x400 frame
-  .frame {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    margin-top: -200px;
-    margin-left: -200px;
-    border-radius: 2px;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-    overflow: hidden;
-    background: #B14AED;
-    color: #333;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-image: linear-gradient(to top right, #364fc7, #22b8cf);
-    border-radius: 7px;
-  }
-  
-  .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .number {
-    display: flex;
-  }
-  
-  .number div {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .number .zero-2 {
-    box-shadow: none;
-  }
-  
-  .one-1 {
-    height: 40px;
-    width: 20px;
-    background-color: #f8f9fa;
-    transform: rotate(50deg);
-    border-radius: 4px;
-    z-index: 1;
-    margin-right: -5px;
-  }
-  
-  .one-2 {
-    height: 110px;
-    width: 25px;
-    background-color: #fff;
-    border-radius: 4px;
-    z-index: 3;
-    margin-right: -7px;
-  }
-  
-  .zero-1 {
-    height: 110px;
-    width: 110px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: relative;
-  }
-  
-  .zero-2 {
-    height: 60px;
-    width:60px;
-    border-radius: 50%;
-    background-image: linear-gradient(to top right, #364fc7, #22b8cf);
-  }
-  
-  .big-left {
-    margin-right: -20px;
-    z-index: 2;
-  }
-  
-  .short {
-    font-size: 84px;
-    font-family: 'Courier New', 'Courier', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #fff;
-    font-weight: 600;
-    margin: -10px auto;
-  }
-  
-  .long {
-    margin: -10px 0;
-    padding: 0 0;
-    text-transform: uppercase;
-    font-size: 24px;
-      font-family: 'Courier New', 'Courier', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #fff;
-    font-weight: 600;
-    width: 200px;
-    text-align: center;
-  }
-  );
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-content {
